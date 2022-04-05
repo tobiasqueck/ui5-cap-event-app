@@ -118,27 +118,43 @@
     voca "^1.4.0"
     winston "^3.3.3"
 
-"@sap-ux/logger@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@sap-ux/logger/-/logger-0.1.3.tgz#fdf7f0dc429288de5d9616a9624b107b97ce33cf"
-  integrity sha512-tLhPtXQOIaFlpK1YSOezF2tLuP05gYo4kXrd5shK9i1prgrK3YFzDeZN+eOWdIAZSZqxlVh8SaepltOxKjJ8sQ==
+"@sap-ux/logger@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@sap-ux/logger/-/logger-0.1.5.tgz#486ab5c58bc583297d56efdcfccbfe5e5ff26fcc"
+  integrity sha512-zi0WJ/7Jf+4tfxPE87EEAQpjuAnH0E/K5TL3beEgvKWebe6ghEP2l7opFJZ+JLk7DMR09kebR5YnY1uoZNn9XQ==
   dependencies:
     chalk "4.1.2"
     lodash "4.17.21"
-    logform "2.3.2"
     winston "3.3.3"
     winston-transport "4.4.1"
 
-"@sap-ux/ui5-proxy-middleware@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sap-ux/ui5-proxy-middleware/-/ui5-proxy-middleware-1.0.1.tgz#573bd53a07e1d6369d965eafebf1d4c64a0b29c2"
-  integrity sha512-IHalXnunYz55XjHx3dtTvE5VvkJMss/htLjxO0ecyloeA0TcThvEyZjT8zaT5AjtJ5AvrKGlAVabV6PqyxYwpQ==
+"@sap-ux/ui5-config@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@sap-ux/ui5-config/-/ui5-config-0.13.1.tgz#49a00a73033fb627e1ee052d679925d6797c7ac1"
+  integrity sha512-D3LqUyIYtDeFEFjMzOjPSyDcIPUzuK3eh7UXeazJ9L8JaDN9bkUgDv04IVxE4+lIaGnDMyufhlL8D5j8Cby/dg==
   dependencies:
-    "@sap-ux/logger" "0.1.3"
+    "@sap-ux/yaml" "0.11.4"
+
+"@sap-ux/ui5-proxy-middleware@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@sap-ux/ui5-proxy-middleware/-/ui5-proxy-middleware-1.0.5.tgz#7424b0d6adf0bdfaadef66dc0eb51ecc6d29278e"
+  integrity sha512-nOTFTpHMhMQGI85Er7worS0zEflm4ktXWTx77E0uPDNlK5tfLfnKWQIkUPSJRQ12ktFRuzwQR1pPAimlzYQWHQ==
+  dependencies:
+    "@sap-ux/logger" "0.1.5"
+    "@sap-ux/ui5-config" "0.13.1"
     express "4.17.2"
     http-proxy-middleware "2.0.1"
     https-proxy-agent "5.0.0"
     i18next "20.3.2"
+
+"@sap-ux/yaml@0.11.4":
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/@sap-ux/yaml/-/yaml-0.11.4.tgz#314d5238e34fbecf6bd865a1ad108ddd7c4df81a"
+  integrity sha512-CeYwKi5xqRIW/Fv8/rdvXedTUL5d0D0kA/bWTtKNnwTxMVg/Gp64bmQNii2pwdkhjBNoMQZnnkhG08GZ8emqKQ==
+  dependencies:
+    i18next "20.3.2"
+    i18next-fs-backend "1.1.1"
+    lodash.merge "4.6.2"
     yaml "2.0.0-10"
 
 "@sap/cds-compiler@~1.50.0":
@@ -1162,7 +1178,7 @@ color@3.0.x:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-colors@1.4.0, colors@^1.2.1:
+colors@^1.2.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -2825,6 +2841,11 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
+i18next-fs-backend@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-1.1.1.tgz#1d8028926803f63784ffa0f2b1478fb369f92735"
+  integrity sha512-RFkfy10hNxJqc7MVAp5iAZq0Tum6msBCNebEe3OelOBvrROvzHUPaR8Qe10RQrOGokTm0W4vJGEJzruFkEt+hQ==
+
 i18next@20.3.2:
   version "20.3.2"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-20.3.2.tgz#5195e76b9e0848a1c198001bf6c7fc72995a55f1"
@@ -3639,6 +3660,11 @@ lodash.isstring@^4.0.1:
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
   integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
 
+lodash.merge@4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
 lodash.once@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
@@ -3648,17 +3674,6 @@ lodash@4.17.21, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
-logform@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/logform/-/logform-2.3.2.tgz#68babe6a74ab09a1fd15a9b1e6cbc7713d41cb5b"
-  integrity sha512-V6JiPThZzTsbVRspNO6TmHkR99oqYTs8fivMBYQkjZj6rxW92KxtDCPE6IkAk1DNBnYKNkjm4jYBm6JDUcyhOA==
-  dependencies:
-    colors "1.4.0"
-    fecha "^4.2.0"
-    ms "^2.1.1"
-    safe-stable-stringify "^1.1.0"
-    triple-beam "^1.3.0"
 
 logform@^2.2.0:
   version "2.3.0"

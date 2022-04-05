@@ -13,8 +13,7 @@ cds.on('bootstrap', (app) => {
         path: [
             '/resources', '/test-resources'
         ],
-        url: 'https://ui5.sap.com',
-        version: '1.97.0'
+        url: 'https://ui5.sap.com'
     }));
 });
 
